@@ -1,0 +1,179 @@
+TRAFFICGUARD AI — 04 SCRIPTS
+Extracted from TrafficGuard-AI-source.txt. Files included: 16
+
+================================================================================
+FILE: scripts/package.json
+================================================================================
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
+  }
+}
+
+================================================================================
+FILE: scripts/post-merge.sh
+================================================================================
+#!/bin/bash
+set -e
+pnpm install --frozen-lockfile
+pnpm --filter db push
+
+================================================================================
+FILE: scripts/src/hello.ts
+================================================================================
+console.log("Hello from @workspace/scripts");
+
+================================================================================
+FILE: scripts/tsconfig.json
+================================================================================
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
+
+================================================================================
+FILE: scripts/package.json
+================================================================================
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
+  }
+}
+
+================================================================================
+FILE: scripts/post-merge.sh
+================================================================================
+#!/bin/bash
+set -e
+pnpm install --frozen-lockfile
+pnpm --filter db push
+
+================================================================================
+FILE: scripts/src/hello.ts
+================================================================================
+console.log("Hello from @workspace/scripts");
+
+================================================================================
+FILE: scripts/tsconfig.json
+================================================================================
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
+
+================================================================================
+FILE: scripts/package.json
+================================================================================
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
+  }
+}
+
+================================================================================
+FILE: scripts/post-merge.sh
+================================================================================
+#!/bin/bash
+set -e
+pnpm install --frozen-lockfile
+pnpm --filter db push
+
+================================================================================
+FILE: scripts/src/hello.ts
+================================================================================
+console.log("Hello from @workspace/scripts");
+
+================================================================================
+FILE: scripts/tsconfig.json
+================================================================================
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
+
+================================================================================
+FILE: scripts/package.json
+================================================================================
+{
+  "name": "@workspace/scripts",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "hello": "tsx ./src/hello.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "tsx": "catalog:"
+  }
+}
+
+================================================================================
+FILE: scripts/post-merge.sh
+================================================================================
+#!/bin/bash
+set -e
+pnpm install --frozen-lockfile
+pnpm --filter db push
+
+================================================================================
+FILE: scripts/src/hello.ts
+================================================================================
+console.log("Hello from @workspace/scripts");
+
+================================================================================
+FILE: scripts/tsconfig.json
+================================================================================
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "types": ["node"]
+  },
+  "include": ["src"]
+}
+
